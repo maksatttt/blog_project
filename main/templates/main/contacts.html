@@ -1,0 +1,60 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Контакты{% endblock %}
+
+{% block content %}
+    <style>
+        /* Дополнительные стили */
+        body {
+            color: #fff; /* Белый цвет текста */
+            background-color: #2c2c2c; /* Цвет фона */
+        }
+        /* Центрирование содержимого */
+        .container {
+            margin-top: 50px; /* Отступ сверху */
+            margin-left: 25%; /* Отступ слева */
+        }
+        main {
+            padding-top: 70px; /* Отступ сверху для избежания наложения на боковую панель */
+        }
+    </style>
+
+    <div class="container text-white text-center">
+        <h1 class="mt-5 mb-4">Свяжитесь с нами</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Telegram</h3>
+                <p><i class="fab fa-telegram"></i> <a href="https://t.me/K_r_mv" class="text-white">https://t.me/K_r_mv</a></p>
+            </div>
+            <div class="col-md-6">
+                <h3>WhatsApp</h3>
+                <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/+996553999010?text=urlencodedtext" class="text-white">WhatsApp</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Email</h3>
+                <p><i class="far fa-envelope"></i> <a href="mailto:sam.partnyagin@gmail.com" class="text-white">sam.partnyagin@gmail.com</a></p>
+            </div>
+            <div class="col-md-6">
+                <h3>Телефон</h3>
+                <p><i class="fas fa-phone"></i> +996 554 700 245</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Facebook</h3>
+                <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/profile.php?id=100054654605233" class="text-white">Facebook</a></p>
+            </div>
+            <div class="col-md-6">
+                <h3>ВКонтакте</h3>
+                <p><i class="fab fa-vk"></i> <a href="https://vk.com/hyperpc" class="text-white">ВКонтакте</a></p>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6">
+                <a href="{% url 'home' %}" class="btn btn-primary btn-block"><i class="fas fa-home"></i> Вернуться на главную</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Про нас</title>
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Подключение дополнительных стилей -->
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <style>
+        /* Дополнительные стили */
+        body {
+            color: #fff; /* Белый цвет текста */
+            background-color: #2c2c2c; /* Цвет фона */
+        }
+        .container {
+            margin-top: 50px; /* Отступ сверху */
+        }
+        main {
+            padding-top: 70px; /* Отступ сверху для избежания наложения на боковую панель */
+        }
+    </style>
+</head>
+<body>
+    <aside>
+        <img src="{% static 'main/img/iuca_logo.svg' %}" alt="Лого">
+        <span class="logo">itBloger</span>
+        <h3>Навигация</h3>
+        <ul>
+            <a href="{% url 'home' %}"><li><i class="fas fa-home"></i> Главная</li></a>
+            <a href="{% url 'about' %}"><li><i class="fas fa-address-card"></i> Про нас</li></a>
+            <a href="{% url 'news_home' %}"><li><i class="fas fa-newspaper"></i> Новости</li></a>
+            <a href=""><li><i class="fas fa-paper-plane"></i> Контакты</li></a>
+            <a href="{% url 'create' %}"><li><button class="btn btn-info"><i class="fas fa-plus-circle"></i> Добавить запись</button></li></a>
+            <a href="{% url 'register' %}"><li><button class="btn btn-primary"><i class="fas fa-user-plus"></i> Регистрация</button></li></a>
+            <a href="{% url 'login' %}"><li><button class="btn btn-success"><i class="fas fa-sign-in-alt"></i> Вход</button></li></a>
+        </ul>
+    </aside>
+    <main>
+        <div class="container text-center"> <!-- Центрирование по центру -->
+            <h1>Про нас</h1>
+            <p>Дополнительная информация о нашем сайте и команде здесь...</p>
+            <p>Здесь можно добавить еще больше информации о вашем проекте, его целях, миссии и т.д.</p>
+            <a href="{% url 'home' %}" class="btn btn-primary">Вернуться на главную страницу</a>
+        </div>
+    </main>
+</body>
+</html>

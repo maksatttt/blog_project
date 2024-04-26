@@ -1,0 +1,26 @@
+/* Стили для иконки пользователя */
+.profile-icon {
+    font-size: 24px;
+    color: #333; /* Цвет иконки */
+}
+
+/* Стили для маленького окошка с кнопкой */
+.profile-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-popup a {
+    text-decoration: none;
+    color: #333;
+}
+
+.profile-popup a:hover {
+    color: #666;
+}
